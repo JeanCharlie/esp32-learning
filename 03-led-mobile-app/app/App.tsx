@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-const ESP32_IP = "192.168.0.25"; // ← pon aquí la IP que viste en el Serial Monitor
+const ESP32_IP = "192.168.X.X"; // ← pon aquí la IP que viste en el Serial Monitor
 
 export default function App() {
   const [estado, setEstado] = useState("desconocido");
