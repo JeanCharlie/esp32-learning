@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-const ESP32_IP = "192.168.XXX.XXX"; // ← pon aquí la IP que viste en el Serial Monitor
+const ESP32_IP = "192.168.0.25"; // ← pon aquí la IP que viste en el Serial Monitor
 
 export default function App() {
   const [estado, setEstado] = useState("desconocido");
@@ -39,10 +39,26 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#111" },
-  titulo: { fontSize: 28, color: "white", marginBottom: 20, fontWeight: "bold" },
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#111",
+  },
+  titulo: {
+    fontSize: 28,
+    color: "white",
+    marginBottom: 20,
+    fontWeight: "bold",
+  },
   estado: { fontSize: 16, color: "#aaa", marginBottom: 40 },
-  boton: { width: 200, padding: 20, borderRadius: 12, alignItems: "center", marginBottom: 16 },
+  boton: {
+    width: 200,
+    padding: 20,
+    borderRadius: 12,
+    alignItems: "center",
+    marginBottom: 16,
+  },
   encender: { backgroundColor: "#22c55e" },
   apagar: { backgroundColor: "#ef4444" },
   textoBoton: { color: "white", fontSize: 18, fontWeight: "bold" },
